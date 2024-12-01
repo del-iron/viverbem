@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Saúde Mental</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link para Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><i class="fas fa-heartbeat"></i> Saúde Mental e Bem-Estar</h1>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Bem-vindo ao Projeto Saúde Mental</h2>
+            <p>Cuidar da mente é tão importante quanto cuidar do corpo. 
+            <br>Faça um teste de bem-estar e veja sugestões para relaxar.</p>
+        </section>
+
+        <section class="quiz">
+            <h2><i class="fas fa-question-circle"></i> Teste de Bem-Estar Emocional</h2>
+            <p>Responda as perguntas abaixo para avaliar como você está se sentindo.</p>
+            <form id="quiz-form">
+                <label for="questao1">1. Como você se sente na maior parte dos dias?</label>
+                <select id="questao1">
+                    <option value="1">Triste</option>
+                    <option value="2">Ansioso</option>
+                    <option value="3">Neutro</option>
+                    <option value="4">Feliz</option>
+                </select>
+
+                <label for="questao2">2. Com que frequência você sente prazer em atividades diárias?</label>
+                <select id="questao2">
+                    <option value="1">Raramente</option>
+                    <option value="2">Às vezes</option>
+                    <option value="3">Frequentemente</option>
+                    <option value="4">Sempre</option>
+                </select>
+
+                <button type="button" id="calcular">Enviar Respostas</button>
+            </form>
+            <div id="resultado-quiz"></div>
+        </section>
+
+        <section class="sugestoes">
+            <h2><i class="fas fa-lightbulb"></i> Sugestões de Cuidados</h2>
+            <ul id="lista-sugestoes">
+                <li><i class="fas fa-meditation"></i> Medite por pelo menos 5 minutos por dia.</li>
+                <li><i class="fas fa-walking"></i> Faça uma caminhada ao ar livre.</li>
+                <li><i class="fas fa-users"></i> Converse com amigos ou familiares.</li>
+                <li><i class="fas fa-book"></i> Leia um livro ou escute uma música relaxante.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 - Projeto Saúde Mental</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
